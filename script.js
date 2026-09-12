@@ -145,9 +145,9 @@ function setupNetwork() {
       particle.x += particle.vx; particle.y += particle.vy;
       if (particle.x < 0 || particle.x > canvas.width) particle.vx *= -1;
       if (particle.y < 0 || particle.y > canvas.height) particle.vy *= -1;
-      context.fillStyle = index % 4 === 0 ? '#c5ff69' : '#5ae0ca';
+      context.fillStyle = index % 4 === 0 ? '#e5484d' : '#8e3040';
       context.globalAlpha = .55; context.beginPath(); context.arc(particle.x, particle.y, particle.r, 0, Math.PI * 2); context.fill();
-      particles.slice(index + 1).forEach((other) => { const distance = Math.hypot(particle.x - other.x, particle.y - other.y); if (distance < 125) { context.strokeStyle = '#5ae0ca'; context.globalAlpha = (1 - distance / 125) * .08; context.beginPath(); context.moveTo(particle.x, particle.y); context.lineTo(other.x, other.y); context.stroke(); } });
+      particles.slice(index + 1).forEach((other) => { const distance = Math.hypot(particle.x - other.x, particle.y - other.y); if (distance < 125) { context.strokeStyle = '#b12635'; context.globalAlpha = (1 - distance / 125) * .08; context.beginPath(); context.moveTo(particle.x, particle.y); context.lineTo(other.x, other.y); context.stroke(); } });
     });
     requestAnimationFrame(draw);
   };
