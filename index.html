@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ronak's learning journey as a BCA student, aspiring developer and AI explorer." />
+  <title>Ronak / Learning in Public</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <canvas id="network-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Ronak home">
+      <span class="brand-mark">R/</span>
+      <span>ronak<span class="brand-dot">.</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#journey">Journey</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="#contact"><span class="status-dot"></span> Let's talk</a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span> BCA student / 01.01</p>
+        <h1>Hi, I'm <em>Ronak</em><span class="title-cursor">_</span></h1>
+        <p class="hero-subtitle">Aspiring Developer <span>•</span> AI Explorer</p>
+        <p class="hero-intro">Learning technology by building, experimenting and solving real problems.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#journey">Explore my journey <span>↗</span></a>
+          <a class="button button-quiet" href="#contact">Let's connect <span>→</span></a>
+        </div>
+        <div class="hero-note"><span class="pulse-ring"></span> Currently learning, building &amp; figuring it out.</div>
+      </div>
+      <div class="hero-visual reveal reveal-delay" aria-hidden="true">
+        <div class="visual-orbit orbit-one"></div>
+        <div class="visual-orbit orbit-two"></div>
+        <div class="visual-orbit orbit-three"></div>
+        <div class="visual-core"><span>R</span><i></i></div>
+        <div class="visual-label label-top">curiosity / 01</div>
+        <div class="visual-label label-bottom">learning in public</div>
+        <div class="visual-cross cross-a">+</div>
+        <div class="visual-cross cross-b">+</div>
+      </div>
+      <div class="scroll-cue"><span></span> Scroll to explore</div>
+    </section>
+
+    <section id="about" class="section-wrap split-section">
+      <div class="section-kicker reveal"><span>01</span><span class="kicker-line"></span><span>About me</span></div>
+      <div class="about-content reveal">
+        <h2>Curious by nature.<br><em>Serious about the process.</em></h2>
+        <p class="large-copy">I am Ronak, a first-year BCA student at JECRC University, currently beginning my journey into the world of technology and software development.</p>
+        <p>I am curious about programming, artificial intelligence, automation and building useful digital solutions. Instead of only learning theory, I want to learn by experimenting with tools, creating projects and solving practical problems.</p>
+        <div class="about-signature">/ this is the beginning<span>↘</span></div>
+      </div>
+    </section>
+
+    <section id="journey" class="section-wrap journey-section">
+      <div class="section-heading reveal">
+        <div class="section-kicker"><span>02</span><span class="kicker-line"></span><span>My tech journey</span></div>
+        <h2>Small steps.<br><em>Real momentum.</em></h2>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <section id="skills" class="section-wrap skills-section">
+      <div class="section-kicker reveal"><span>03</span><span class="kicker-line"></span><span>Skills in progress</span></div>
+      <div class="skills-grid">
+        <div class="skill-column reveal">
+          <div class="column-heading"><span class="column-icon">↗</span><h3>Currently learning</h3><span class="column-tag">Growing</span></div>
+          <div class="skill-list" id="learning-skills"></div>
+        </div>
+        <div class="skill-column skill-column-alt reveal reveal-delay">
+          <div class="column-heading"><span class="column-icon">◎</span><h3>Exploring</h3><span class="column-tag">Curious</span></div>
+          <div class="skill-list" id="exploring-skills"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-wrap projects-section">
+      <div class="section-heading project-heading reveal">
+        <div>
+          <div class="section-kicker"><span>04</span><span class="kicker-line"></span><span>Selected experiments</span></div>
+          <h2>Things I'm<br><em>currently building.</em></h2>
+        </div>
+        <p>Not a list of finished achievements. A window into what I'm learning by making.</p>
+      </div>
+      <div class="projects-grid" id="projects-grid"></div>
+    </section>
+
+    <section class="section-wrap curious-section">
+      <div class="section-kicker reveal"><span>05</span><span class="kicker-line"></span><span>Open tabs in my brain</span></div>
+      <div class="curious-intro reveal"><h2>What I'm <em>curious about.</em></h2><p>Following questions, not just trends. Each one is an invitation to learn something new.</p></div>
+      <div class="curious-grid" id="curious-grid"></div>
+    </section>
+
+    <section class="philosophy-band">
+      <div class="section-wrap philosophy-inner reveal">
+        <span class="philosophy-mark">//</span>
+        <h2>Learn <span>→</span> Build <span>→</span> Break <span>→</span> Improve</h2>
+        <p>As a beginner, I believe the best way to learn technology is by building projects, experimenting, making mistakes and improving continuously.</p>
+      </div>
+    </section>
+
+    <section id="education" class="section-wrap education-section">
+      <div class="section-kicker reveal"><span>06</span><span class="kicker-line"></span><span>Where I'm learning</span></div>
+      <div class="education-card reveal">
+        <div class="edu-number">01</div>
+        <div class="edu-main"><p class="eyebrow">Education / current</p><h2>BCA</h2><p>Bachelor of Computer Applications</p></div>
+        <div class="edu-details"><strong>JECRC University</strong><span>1st Year <i>•</i> 1st Semester</span><span>Jaipur, Rajasthan</span></div>
+        <div class="edu-arrow">↗</div>
+      </div>
+    </section>
+
+    <section id="goals" class="section-wrap goals-section">
+      <div class="section-heading reveal"><div class="section-kicker"><span>07</span><span class="kicker-line"></span><span>Future roadmap</span></div><h2>The long game<br><em>starts here.</em></h2></div>
+      <div class="goals-list" id="goals-list"></div>
+    </section>
+
+    <section id="contact" class="section-wrap contact-section">
+      <div class="contact-panel reveal">
+        <div class="contact-copy"><p class="eyebrow"><span class="eyebrow-line"></span> End of page / beginning of something</p><h2>Have an idea?<br><em>Let's build something.</em></h2><p>I'm always open to thoughtful conversations, beginner-friendly collaborations and interesting problems to learn from.</p></div>
+        <div class="contact-links" id="contact-links"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap"><span>© <span id="year"></span> Ronak</span><span>Made while learning on purpose <span class="footer-star">✦</span></span><a href="#top">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
